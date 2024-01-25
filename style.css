@@ -1,0 +1,536 @@
+/*google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chonburi&family=DM+Serif+Display&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Chonburi&family=DM+Serif+Display&family=Play&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+
+/**************GLOBAL STYES***************/
+body {
+  font-family: "Anton", sans-serif;
+  color:rgb(32, 30, 30) ;
+}
+
+.fa-check{
+  color: blue;
+}
+
+.section-containers{
+margin-top: 5rem;
+max-width: 100%;
+width: 100%;
+
+}
+
+section{
+  width: 100%;
+}
+
+a{
+text-decoration: none;
+}
+
+ul li {
+list-style-type:none;
+font-size: 2.50rem;
+color: gold;
+font-weight: bold;
+text-shadow: 1px 1px 1px #000000;
+margin-bottom: .25rem;
+}
+
+
+@media (max-width:500px) {
+.heading{
+  font-size: 1.75rem;
+ }
+}
+
+/*SUB HEADING*/
+
+.sub-heading {
+text-align: center;
+font-size: 1.75rem;
+text-decoration:overline;
+margin-bottom: 1rem;
+
+font-family: "DM Serif Display", serif;
+}
+
+@media (max-width:500px) {
+.sub-heading{
+  font-size: 1.25rem;
+  padding: 0.50rem;
+ }
+}
+
+
+h3 {
+font-size: 1.50rem;
+font-weight: bold;
+
+}
+
+p {
+font-size: 1.25rem;
+
+
+}
+
+
+/******NAV SECTION****************/
+
+nav {
+  width: 100%;
+ display: flex;
+  flex-direction: column;
+overflow: hidden;
+position: fixed; /* Set the navbar to fixed position */
+ top: 0; /* Position the navbar at the top of the page */
+z-index: 1;
+background-color: #fff;
+}
+
+.top-nav{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  
+padding: .75rem;
+}
+
+
+.logo {
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+.company-name {
+flex:1;
+display: flex;
+justify-content: center;
+
+}
+
+/*gsap animation*/
+
+.company-name a{
+font-size: 3rem;
+color: gold;
+text-shadow: 1px 1px 1px blue;
+
+}
+
+
+.my-text {
+overflow: hidden;
+}
+.char {
+transform: translateY(-115px);
+transition: transform .5s;
+}
+
+.social-media{
+flex: 1;
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+.social-media .icon {
+
+color: gold;
+}
+/*bottom nav*/
+.bottom-nav{
+border-top: 3px solid blue;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+}
+
+
+.bottom-nav .phone-num a, .fa-phone, .fa-location-dot, .fa-building {
+  font-size: 2rem;
+  color: blue;
+}
+
+
+
+@media (max-width:1000px) {
+
+.company-name a{
+  font-size: 2rem;
+  color: gold;
+   text-shadow: 1px 1px 1px blue;
+ }
+
+ .company-name{
+  flex:2;
+}
+
+}
+
+@media (max-width:500px) {
+
+.top-nav{
+  padding: .20rem 0;
+}
+
+
+.logo {
+justify-content:flex-start;
+}
+
+.logo img{
+  width:90px;
+    }
+ 
+    .company-name h1{
+      font-size: 1.50rem;
+      
+     }
+
+.social-media{
+justify-content: flex-end;
+margin-right: .50rem;
+}
+
+.social-media{
+  gap: .25rem;
+  }
+  
+  .social-media .fa-brands {
+  font-size: 1.50rem;
+  }
+
+  .bottom-nav{
+ 
+      justify-content: space-around;
+   
+    }
+    
+
+
+.bottom-nav .phone-num a, .fa-phone, .fa-location-dot, .fa-building {
+    font-size: 1rem;
+
+ }
+}
+/**************************NAV ENDS*********************************/
+
+
+/**ONSCROLL IMAGE REVEAL ***/
+.revealer {
+width: 100%;
+  position: relative;
+  height: 100vh;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100vh;
+  
+  background-color: black;
+}
+
+.img-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+}
+.img-mask img {
+  height: 100vh;
+  width: 100%;
+  object-fit:fill;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+
+@media (max-width:500px) {
+  .revealer {
+    width: 100%;
+     
+    }
+    
+    .img-mask {
+    
+      width: 100%;
+ 
+    }
+
+    .img-mask img {
+    
+      width: 100%;
+      object-fit:cover;
+    }
+    
+    
+    .overlay {
+      width: 100%;
+   
+     
+    }
+}
+
+/**************GET STARTED****************/
+.get-started {
+padding:5rem 0;
+background-color: gold;
+}
+
+.get-started-container {
+width: 100%;
+display: flex;
+justify-content: space-around;
+gap: 1rem;
+flex-wrap: wrap;
+margin-top: 3rem;
+}
+
+.get-started-container div{
+  width: 300px;
+  height: 300px;
+  display: flex;
+ 
+  display: flex;
+  background-color: rgb(247, 199, 8);
+  margin: 3rem 0;
+  }
+
+
+.first, .second, .third, .fourth{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 3rem;
+gap: 1rem;
+color: blue;
+text-shadow: 1px 1px 1px gold;
+box-shadow: 3px 3px 3px rgb(58, 58, 58);
+}
+
+.first {
+
+background-image: url(stairs.jpg);
+background-size: cover;
+
+}
+
+.second{
+
+background-image: url(hallway.jpg);
+background-size: cover;
+ }
+
+ .third {
+  
+  background-image: url(commercial.jpg);
+  background-size: cover;
+ }
+
+ .fourth {
+ 
+  background-image: url(commercial2.jpg);
+  background-size: cover;
+ }
+   
+
+@media (max-width:500px) {
+  .get-started-container {
+    width: 100%;
+   
+    }
+    
+    .get-started-container div{
+      width: 90%;
+      
+      }
+}
+
+/**************************GET STARTED ENDS**********************************/
+/************************ ABOUT SECTION STARTS ***************************/
+.about {
+  padding: 5rem 0;
+}
+
+.inner-wrapper {
+
+width: 100%;
+display: flex;
+}
+
+
+
+.left-container {
+width: 50%;
+
+padding: 3rem;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+
+}
+
+.right-container {
+width: 50%;
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media (max-width:800px) {
+.inner-wrapper {
+  width: 100%;
+  flex-direction: column;
+  }
+  
+ 
+    .left-container {
+      width: 100%;
+    min-height: auto;
+     }
+    
+     .right-container {
+      width: 100%;
+      min-height: auto;
+    
+     }
+ .about {
+  padding-bottom: 0;
+ }
+    
+}
+
+@media (max-width:500px) {
+.left-container .paragraph ul li{
+  margin-bottom: .50rem;
+  }
+  .inner-wrapper {
+    width: 100%;
+   
+    }
+    .left-container {
+      width: 50%;
+      
+      padding: 3rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      
+      }
+   
+      .left-container {
+        width: 100%;
+    
+        padding: 0 1rem;
+       }
+      
+       .right-container {
+        width: 100%;
+      border-top: 3px solid blue;
+      padding: 0;
+       }
+
+       .right-container img{
+       width: 100%;
+       }
+       .about .right-container {
+        background-color: #000000;
+       }
+}
+
+
+
+/************************gym classes**************************************/
+.services {
+width: 100%;
+padding: 5rem 1rem;
+background-image:url(services.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+padding: 3rem 1rem;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.list-container{
+  margin-top: 3rem;
+}
+
+.shadow{
+  color: white;
+  text-shadow: 1px 1px 1px blue;
+}
+
+
+/***************************MAP***********************************/
+.map {
+padding: 5rem 0 ;
+
+}
+
+
+@media (max-width:500px) {
+  .left-container iframe {
+    width: 100%;
+  }
+  .map {
+    padding-bottom: 0;
+  }
+
+  .map .right-container{
+    background-color: #000000;
+  }
+ 
+}
+
+
+/****************************FOOTER********************************/
+footer{
+padding: 3rem;
+background-color:gold;
+text-align: center;
+
+}
+
+footer a{
+text-decoration:overline;
+font-weight: bold;
+font-style: italic;
+}
+
+@media (max-width:500px) {
+footer{
+  padding-bottom: 4rem;
+}
+}
