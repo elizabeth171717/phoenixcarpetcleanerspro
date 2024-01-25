@@ -30,8 +30,8 @@ ScrollTrigger.defaults({
   toggleActions: "restart pause resume pause"
 });
 
-gsap.to(".heading h1", {
-  scrollTrigger: ".inner-wrapper", 
+gsap.to(".company-name", {
+  scrollTrigger: ".company-name", 
   duration: 1, 
   rotation: 360
 });
